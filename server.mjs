@@ -155,13 +155,13 @@ const server = app.listen(PORT, HOST, async () => {
   const missing = caps.engines.filter((engine) => !engine.ok);
   const line = (label, value) => `  ${label.padEnd(10)} ${value}`;
   console.log('');
-  console.log('  Forma — any file, any format');
-  console.log(`  ${'─'.repeat(46)}`);
+  console.log('  Forma - any file, any format');
+  console.log(`  ${'-'.repeat(46)}`);
   console.log(line('engines', ok.map((e) => e.name).join(', ')));
   if (missing.length) console.log(line('inactive', missing.map((e) => e.name).join(', ')));
   console.log(line('catalog', `${caps.stats.formats} formats`));
   console.log(line('matrix', `${caps.stats.conversions} conversions across ${caps.stats.readable} source formats`));
-  console.log(`  ${'─'.repeat(46)}`);
+  console.log(`  ${'-'.repeat(46)}`);
   console.log(`  ready at http://${HOST}:${PORT}`);
   console.log('');
 });
