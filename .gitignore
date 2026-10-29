@@ -1,0 +1,13 @@
+node_modules/
+vendor/
+test/shots/
+test/downloads/
+test/fixtures/*.png
+test/fixtures/*.jpg
+test/fixtures/*.wav
+test/fixtures/*.docx
+test/fixtures/*.doc
+test/fixtures/*.bin
+test/fixtures/report.md
+*.log
+.DS_Store
